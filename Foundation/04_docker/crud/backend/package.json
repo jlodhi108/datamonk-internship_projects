@@ -1,0 +1,13 @@
+{
+  "name": "crud-backend",
+  "version": "1.0.0",
+  "description": "Simple CRUD API for the frontend app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.19.0"
+  }
+}

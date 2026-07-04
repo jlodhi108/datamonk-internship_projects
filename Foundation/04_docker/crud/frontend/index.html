@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple CRUD App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f3f4f6;
+        color: #111827;
+      }
+
+      .container {
+        max-width: 720px;
+        margin: 40px auto;
+        padding: 24px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+      }
+
+      form {
+        display: grid;
+        gap: 12px;
+        margin-bottom: 24px;
+      }
+
+      input, button {
+        padding: 10px 12px;
+        border-radius: 8px;
+        border: 1px solid #d1d5db;
+        font-size: 14px;
+      }
+
+      button {
+        cursor: pointer;
+        background: #2563eb;
+        color: white;
+        border: none;
+      }
+
+      button.secondary {
+        background: #6b7280;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        display: grid;
+        gap: 12px;
+      }
+
+      li {
+        padding: 14px;
+        border: 1px solid #e5e7eb;
+        border-radius: 10px;
+      }
+
+      .actions {
+        display: flex;
+        gap: 8px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Simple CRUD App</h1>
+      <form id="item-form">
+        <input id="name" placeholder="Name" required />
+        <input id="description" placeholder="Description" required />
+        <input id="item-id" type="hidden" />
+        <button type="submit">Save item</button>
+      </form>
+
+      <ul id="item-list"></ul>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
